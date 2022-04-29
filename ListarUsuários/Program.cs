@@ -21,7 +21,7 @@ namespace ListarUsuario
                 list.Add(new Usuarios(name));
             }
 
-            Console.WriteLine("Lista de todos os usuário/melhor epoca do cav");
+            Console.WriteLine("Lista de todos os usuário");
             foreach (Usuarios usu in list)
                 Console.WriteLine(usu.ToString());
         }
