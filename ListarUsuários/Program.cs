@@ -21,9 +21,20 @@ namespace ListarUsuario
                 list.Add(new Usuarios(name));
             }
 
-            Console.WriteLine("Lista de todos os usuário");
+            Console.WriteLine("Listando a poderósissima banda Blinks of rage");
             foreach (Usuarios usu in list)
                 Console.WriteLine(usu.ToString());
+
+            Console.WriteLine();
+
+            Console.WriteLine("Digite o usuário que deseja remover");
+            var removeUsuario = Console.ReadLine();
+
+            Usuarios usuarios = list.Find(x => x.Name == removeUsuario);
+            list.Remove(usuarios);
+
+            foreach (Usuarios usu in list)
+                Console.WriteLine("Nova lista - " + usu.ToString());
         }
     }
 }
