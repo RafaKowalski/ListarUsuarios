@@ -39,13 +39,13 @@ namespace ListarUsuario
                 list.Remove(usuarios);
 
                 foreach (Usuarios usu in list)
-                    Console.WriteLine("Nova lista - " + usu.ToString());
+                    Console.WriteLine("Nova lista - " + usu);
             }
             else if (escolha == "N")
             {
                 Console.WriteLine("Mantendo usuários");
                 foreach (Usuarios usu in list)
-                    Console.WriteLine(usu.ToString());
+                    Console.WriteLine(usu);
             }
         }
     }
