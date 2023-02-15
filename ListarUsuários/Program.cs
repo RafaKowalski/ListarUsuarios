@@ -10,7 +10,7 @@ namespace ListarUsuario
             Console.WriteLine("Entre com o numero de usuarios que deseja listar: ");
             int users = int.Parse(Console.ReadLine());
 
-            List <Usuarios> list = new List<Usuarios>();
+            List<Usuarios> list = new List<Usuarios>();
 
             for (int i = 1; i <= users; i++)
             {
